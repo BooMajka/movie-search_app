@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie-Search App</title>
+    <!-- Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet" />
+    <!-- Styles-->
+
+
+    <!-- Compiled and minified CSS - MATERIALIZE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <!-- Compiled and minified JavaScript - MATERIALIZE-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="grey-text text-lighten-2">Searchable Movie App</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="left-side col s12 l6 mr">
+                <form>
+                    <!----INPUT-->
+                    <div class="row">
+                        <div class="input-field">
+                            <input placeholder="Title" id="title" type="text" class="validate" />
+                            <label for="title">Search by the Title</label>
+                            <p class="warning">invalid entry</p>
+                        </div>
+                        <div>
+                            <a class="waves-effect waves-light btn" id="search-button">Submit</a>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="row mt">
+                    <h4 class="grey-text text-lighten-2">Watch List</h4>
+                    <div id="watch-list">
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-side col s12 l6" id="repo-list">
+                <span class="flow-text"></span>
+            </div>
+
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <img id="modal-image" src="">
+                    <div class="modal-description">
+                        <h4 id="modal-title"></h4>
+                        <p id="modal-summary"></p>
+                        <button id="modal-button" class="btn waves-effect waves-light mt" type="submit" name="action">
+                            Add to Watch List<i class="material-icons right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="modal-close waves-effect btn-flat">Close</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+      <div class="row mt center">
+        <h4 class="grey-text text-lighten-2">Stay Home. Stay Healthy. Watch Movies.</h4>
+       <div class ="covid-info"></div>
+    </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
